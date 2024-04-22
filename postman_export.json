@@ -1,0 +1,952 @@
+{
+	"info": {
+		"_postman_id": "11398555-fdc8-4dab-a06a-32209cb424f9",
+		"name": "v3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cirro",
+			"item": [
+				{
+					"name": "Web En",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "234234234rtr",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/cirro/web/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"cirro",
+								"web",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Es",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/cirro/web/es",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"cirro",
+								"web",
+								"es"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "App En",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/cirro/app/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"cirro",
+								"app",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find web",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}get/cirro/web/find/4",
+							"host": [
+								"{{host}}get"
+							],
+							"path": [
+								"cirro",
+								"web",
+								"find",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find app",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}get/cirro/app/all",
+							"host": [
+								"{{host}}get"
+							],
+							"path": [
+								"cirro",
+								"app",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "GME",
+			"item": [
+				{
+					"name": "Web En",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/gme/web/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"gme",
+								"web",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Es",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/gme/web/es",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"gme",
+								"web",
+								"es"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "App En",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/gme/app/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"gme",
+								"app",
+								"en"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DP",
+			"item": [
+				{
+					"name": "Web En",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/dp/web/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"dp",
+								"web",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Es",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/dp/web/es",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"dp",
+								"web",
+								"es"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "App En",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/dp/app/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"dp",
+								"app",
+								"en"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reliant",
+			"item": [
+				{
+					"name": "Web En",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "293877834",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/reliant/web/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"reliant",
+								"web",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Es",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/reliant/web/es",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"reliant",
+								"web",
+								"es"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "App En",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/reliant/app/en",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"reliant",
+								"app",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web SF",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "helpful",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "comments",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "currentUrl",
+									"value": "https://www.google.com/test?id=5&test=check",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}post/reliant/simple-form/oam",
+							"host": [
+								"{{host}}post"
+							],
+							"path": [
+								"reliant",
+								"simple-form",
+								"oam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find web",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}get/reliant/web/find/2",
+							"host": [
+								"{{host}}get"
+							],
+							"path": [
+								"reliant",
+								"web",
+								"find",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find app",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nps",
+									"value": "4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "commentsES",
+									"value": "esto es una prueba ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}get/reliant/app/find/6",
+							"host": [
+								"{{host}}get"
+							],
+							"path": [
+								"reliant",
+								"app",
+								"find",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Token is set!\", ()=>{",
+							"    const responseJson = pm.response.json();",
+							"    pm.globals.set('token', responseJson.token);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{reliant}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API-reliant",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}auth/token",
+					"host": [
+						"{{host}}auth"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

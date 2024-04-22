@@ -1,0 +1,4 @@
+id,date,rating,nps,accomplish,reason,comments,reason_es,comments_es,url,previous_url,ip_address,analytics_id,session_id,performance_id,ca_number,survey_trigger,device,mobile_os,language,user_email,user_phone,user_followup,brand
+29162,"2021-09-27 08:09:19",10,6,yes,"Pay my bill",,,,https://www.reliant.com/,https://www.google.com/,2607:fb90:5d09:bc8d:0:16:c1f1:7801,13613386499432173140936733540794002756,,1629980201475L5D6UOS5EKVRF9VB83V8A83QN38GUQD1,,auto,mobile,,EN,,,NA,Reliant
+29163,"2021-09-27 08:10:00",9,9,yes,"Pay my bill",,,,https://www.reliant.com/protected/confirmpayment.htm,https://pay.reliant.com/,64.92.27.109,90801859712269749194100508743471564314,,1629982753589HE2C5NQEV6MQM4VNPLG4LJRIF7BTIGMN,000013831276,auto,mobile,,EN,,,NA,Reliant
+21,"2021-09-27 08:29:08",10,5,,N/A,,,,,,,,,,,,,,EN,,,NA,DP

@@ -1,0 +1,8 @@
+{
+  "short_name": "wheelockReliant",
+  "name": "Wheelock Solutions Reliant Web Survey",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

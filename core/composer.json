@@ -1,0 +1,23 @@
+{
+  "require": {
+    "thingengineer/mysqli-database-class": "dev-master",
+    "phpseclib/phpseclib": "~2.0",
+    "phpmailer/phpmailer": "^6.0",
+    "aws/aws-sdk-php": "^3.112",
+    "box/spout": "^3.1",
+    "icewind/smb": "^3.2",
+    "spatie/simple-excel": "^1.2",
+    "vlucas/phpdotenv": "^2.4",
+    "nesbot/carbon": "^2.41"
+  },
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "app/Controllers/",
+      "Http\\": "app/Http/",
+      "Utilities\\": "app/Utilities/",
+      "Models\\": "app/Models/",
+      "Mail\\": "app/Mail/",
+      "REST\\": "app/REST/"
+    }
+  }
+}
